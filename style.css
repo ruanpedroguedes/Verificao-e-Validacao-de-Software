@@ -1,0 +1,12 @@
+:root{font-family:system-ui,Arial,Helvetica,sans-serif}
+body{display:flex;min-height:100vh;align-items:center;justify-content:center;background:#f5f7fb;margin:0}
+.container{width:420px;background:white;padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+form{display:flex;gap:8px;margin-bottom:12px}
+input#input-titulo{flex:1;padding:8px;border:1px solid #ddd;border-radius:4px}
+button{padding:8px 12px;border-radius:6px;border:0;background:#2463eb;color:#fff}
+.filtros{display:flex;gap:8px;margin-bottom:12px}
+#lista-tarefas{list-style:none;padding:0;margin:0}
+#lista-tarefas li{display:flex;align-items:center;justify-content:space-between;padding:8px;border-bottom:1px solid #f0f0f0}
+.titulo{flex:1;margin-left:8px}
+.done{text-decoration:line-through;color:#777}
+#mensagem{margin-top:12px;color:#b00020}

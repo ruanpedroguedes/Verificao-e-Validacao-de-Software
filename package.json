@@ -1,0 +1,17 @@
+{
+"name": "plataforma-tarefas-minima",
+"version": "1.0.0",
+"type": "module",
+"scripts": {
+"start": "npx http-server -c-1 . -p 8080",
+"test:unit": "jest --config tests/jest.config.js",
+"test:functional": "node tests/functional/tarefas.functional.test.js",
+"test": "npm run test:unit && npm run test:functional"
+},
+"devDependencies": {
+"jest": "^29.6.0",
+"http-server": "^14.1.1",
+"selenium-webdriver": "^4.9.0",
+"chromedriver": "^116.0.0"
+}
+}

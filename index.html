@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Plataforma Tarefas</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="container">
+<h1>Lista de Tarefas</h1>
+
+
+<form id="form-tarefas">
+<input id="input-titulo" placeholder="Título da tarefa" />
+<button id="btn-add" type="submit">Adicionar</button>
+</form>
+
+
+<div class="filtros">
+<label><input type="radio" name="filtro" value="all" checked /> Todas</label>
+<label><input type="radio" name="filtro" value="pending" /> Pendentes</label>
+<label><input type="radio" name="filtro" value="done" /> Concluídas</label>
+</div>
+
+
+<ul id="lista-tarefas"></ul>
+
+
+<div id="mensagem" role="status" aria-live="polite"></div>
+</main>
+
+
+<script type="module" src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+name: CI
+
+
+on:
+push:
+branches: [ main, master ]
+pull_request:
+branches: [ main, master ]
+
+
+jobs:
+build-and-test:
+runs-on: ubuntu-latest
+
+
+steps:
+- uses: actions/checkout@v4
+
+
+- name: Use Node.js
+uses: actions/setup-node@v4
+with:
+node-version: '20'
+
+
+- name: Install dependencies
+run: npm ci
+
+
+- name: Start simple http server
+run: npm run start &
+
+
+- name: Wait for server
+run: |
+for i in {1..10}; do
+if curl --silent --fail http://localhost:8080 >/dev/null
