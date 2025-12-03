@@ -1,4 +1,4 @@
-// app.js (module)
+// app.js (module) novos testes
 import * as T from './src/tarefas.js';
 
 const form = document.getElementById('form-tarefas');
